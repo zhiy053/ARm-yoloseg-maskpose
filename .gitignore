@@ -1,0 +1,47 @@
+# Unity generated directories
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/*_BurstDebugInformation_DoNotShip/
+
+# IDE generated files
+/.vs/
+/.idea/
+/.vscode/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Unity crash and profiling output
+sysinfo.txt
+crashlytics-build.properties
+
+# Local tooling and generated model output
+/.venv-yolo/
+/Tools/output/
+
+# Build artifacts
+*.apk
+*.aab
+*.unitypackage
