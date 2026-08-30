@@ -18,24 +18,28 @@ The current runtime pipeline is:
 6. An existing retro model is placed at the same position; a built-in procedural
    replacement is used if the original model is missing.
 
-## Opening the project
+## Cloning and opening the project
 
-- Recommended Unity version: `6000.0.76f1`
-- In Unity Hub, select `Add > Add project from disk`, then choose the entire
-  `/Users/zhiyue/Desktop/ARm-yoloseg-maskpose` folder.
-- This desktop entry links to `~/Projects/ARm-yoloseg-maskpose` to prevent iCloud
-  from turning the ONNX model and Unity PackageCache into cloud-only placeholder
-  files. Do not open the desktop folder named
-  `ARm-yoloseg-maskpose-icloud-backup` instead.
+```bash
+git clone https://github.com/zhiy053/ARm-yoloseg-maskpose.git
+```
+
+- Recommended Unity version: `6000.0.76f1`.
+- In Unity Hub, select `Add > Add project from disk`, then choose the cloned
+  repository folder.
+- A location outside iCloud, OneDrive, or another cloud-synced folder is
+  recommended for Unity projects containing ONNX models and generated caches.
+- Wait for Unity Package Manager and the initial asset import to finish.
 - Open the scene at `Assets/Scenes/SampleScene.unity`.
 - If the scene is corrupted or components are missing, run:
   `Tools > AR 80s Retro > Prepare Build Scene (YOLO-seg Mask Pose)`
 - Target platform: a LiDAR-capable iPhone/iPad. Build the iOS app through Xcode.
 
-## Generated iOS project
+## Generating the iOS project
 
-The Unity iOS export completed successfully. The project is located at
-`Builds/iOS/Unity-iPhone.xcodeproj`.
+Generated build output is intentionally excluded from Git. In Unity, prepare
+the build scene, switch the target platform to iOS, and export the Xcode project
+to `Builds/iOS` using the standard Unity build workflow.
 
 To continue:
 
